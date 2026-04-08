@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LionPortal - Secure Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up-container">
+            <form id="registerForm">
+                <h1>Create Account</h1>
+                <p>Join our premium community today</p>
+                <div class="input-group">
+                    <input type="text" id="regName" placeholder="Full Name" required>
+                    <input type="email" id="regEmail" placeholder="Email Address" required>
+                    <input type="password" id="regPassword" placeholder="Password" required>
+                </div>
+                <button type="submit" class="premium-btn">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in-container">
+            <form id="loginForm">
+                <h1>Welcome Back</h1>
+                <p>Please enter your details to login</p>
+                <div class="input-group">
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+                <button type="submit" class="premium-btn">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Ready to Login?</h1>
+                    <p>If you already have an account, click below</p>
+                    <button class="ghost-btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>New Here?</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="ghost-btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
